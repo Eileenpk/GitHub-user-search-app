@@ -1,0 +1,390 @@
+ 
+/* Universal styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+ }
+
+
+    :root {
+        font-size: 16px;
+        --main-color: #F6F8FF;
+        --second-color:  #FEFEFE;
+        --third-color: #0079FF;
+        --notAvailable-color: #a5b4cc;
+        --mode-color: #4b6a9b;
+        --mode-hover: #222731;
+        --font-color: #697C9A;
+        --heading-color: #2B3442;
+        --font-family: 'Space Mono', monospace;
+    }
+
+.dark-mode {
+    --main-color: #141d2f;
+    --second-color:  #1e2a47;
+    --third-color: #0079FF;
+    --notAvailable-color: #8e94a3;
+    --mode-color: #fff;
+    --mode-hover: #90a4d4;
+    --font-color: #FFF;
+    --heading-color: #fefefe;
+    --font-family: 'Space Mono', monospace;
+}
+
+    
+
+
+
+
+/* Typography  */
+h1 {
+    color: var(--heading-color);
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2.406875rem;
+    width: 8rem;
+}
+
+h2 {
+    color: var(--heading-color);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.48125rem;
+    width: 6.75rem; 
+}
+
+h3 {
+    font-size: 13px;
+}
+
+h3, p {
+    color: var(--font-color);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 0.6875rem;
+    color: var(--font-color);
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+nav p {
+    color:var(--font-color);
+    font-weight: 700;
+    margin-left: 7.6875rem;
+    font-size: 0.8125rem;
+    line-height: 1.203125rem;
+}
+
+/* main content  */
+body {
+    background: var(--main-color);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+
+header {
+    margin-top: 1.9375rem; 
+}
+
+header,
+main,
+footer {
+    width: 20.4375rem;
+    /* min-width: 85%; */
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2.25rem;
+}
+
+.btn {
+    display: flex;
+}
+nav i {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 1rem;
+    margin-top: 3px;
+    color: var(--mode-color);
+}
+nav p:hover,
+nav p:active,
+nav i:hover,
+nav i:active {
+    cursor: pointer;
+    color: var(--mode-hover);
+}
+
+.search-bar {
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--second-color);
+    border-radius: 0.9375rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar img {
+    margin-left: 1rem;
+    margin-right: 0.55625rem;
+}
+
+input {
+    background-color: var(--second-color);
+    border: none;
+    color: var(--font-color);
+    width: 12rem; 
+}
+input:hover,
+input:active {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color:  var(--font-color);
+    font-family: var(--font-family);
+    font-size: 0.8125rem;
+    line-height: 1.5625rem;
+}
+
+.search-bar-p {
+    color: red;
+    right: calc(50% - 6rem / 2);
+    top:31%;
+    width:6rem;
+    font-size: 1rem;
+    width: fit-content;
+    position: absolute;
+}
+
+button {
+    width: 5.25rem;
+    height: 2.875rem;
+    background-color: var(--third-color);
+    color: #FFF;
+    font-size: 0.875rem;
+    font-family: var(--font-family);
+    line-height: 1.2956rem;
+    border: none;
+    border-radius: 0.9375rem;
+    margin-right: 0.4375rem;
+}
+
+button:hover,
+button:active {
+    cursor: pointer;
+    background: #60ABFF;
+}
+
+main {
+    background: var(--second-color);
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+}
+
+.user-name {
+    margin-bottom: 2.0625rem;
+    display: flex;
+}
+
+.user-name img {
+    height: 4.375rem;
+    width: 4.375rem;
+    border-radius: 50%;
+}
+
+.user-info {
+    margin-left: 1.21875rem;
+    font-size: 0.8125rem;
+}
+
+.user-info a {
+    color: #0079FF;
+    text-decoration: none;  
+}
+
+.user-info a:hover {
+    cursor: pointer;
+}
+
+.bio {
+    font-size: 0.8125rem;
+    line-height: 1.5625rem;
+    margin-bottom: 1.4375rem;
+}
+
+.info-container {
+    background: var(--main-color);
+    height: 5.3125rem;
+    border-radius: 0.9375rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.9375rem;
+    margin-bottom: 1.5rem;
+}
+
+.bio, 
+.info-container {
+    min-width: 17.4375rem;
+    max-width: 17.4375rem;
+} 
+
+.info {
+    width: 5.0625rem;
+    text-align: center;
+}
+
+.info p {
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    background: var(--second-color);
+    border-radius:0 0 0.9375rem 0.9375rem;
+    padding-left: 1.5rem;
+}
+
+.links {
+    display: flex;
+}
+
+footer i {
+    width: 0.859375rem;
+    margin-bottom: 1rem;
+    margin-right: 0.8125rem;
+    margin-top: 3px;
+    color: var(--font-color); 
+}
+
+.links a {
+    font-size: 0.8125rem;
+    color: var(--font-color);
+    text-decoration: none;
+}
+ .not-aval a {
+    color: var(--notAvailable-color);
+} 
+
+.not-aval {
+    color: var(--notAvailable-color);
+}
+
+/* Media queries */
+@media(min-width:700px) {
+    header,
+    main,
+    footer {
+        max-width: 85%;
+        min-width: 35.8125rem;
+    }
+
+    nav p {
+        margin-left: 22.4375rem;
+    }
+
+    nav img {
+        margin-left: 2rem;
+    }
+
+    button {
+        margin-left: 24%;
+    }
+
+    input {
+        height: 1.5625rem;
+        width: 16.875rem;
+        margin-left: 1.5rem;
+    }
+
+    input::placeholder {
+        color:  var(--font-color);
+        font-family: var(--font-family);
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+    }
+
+    main,
+    footer {
+        padding-left: 2.5rem;
+    }
+
+    .user-name img {
+        height: 7.3125rem;
+        width: 7.3125rem;
+        margin-right: 2.5rem;
+    }
+
+    .user-info {
+        width: 11.5rem;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 1.625rem;
+        line-height: 38.51px;
+    }
+
+    .bio, 
+    .info-container {
+        min-width: 30.8125rem;
+        max-width: 30.8125rem;
+    } 
+
+    .info {
+        text-align: left;
+    }
+
+    h4 {
+        font-size: 0.8125rem;
+        line-height: 1.2031rem;
+    }
+
+    .info p {
+        font-size: 1.375rem;
+        line-height: 2.03625rem;
+    }
+
+    .repos {
+        margin-left: 2rem;
+        margin-right: 6.1875rem;
+    }
+
+    .followers {
+        margin-right: 5.125rem;
+    }
+
+    footer {
+        flex-direction: row;
+        padding-bottom: 2.5rem;
+        text-align: left;
+    }
+
+    .link-container {
+        width: 246px;
+    }
+
+    .link-container:last-of-type{
+        padding-left: 80px;
+    }
+
+}
