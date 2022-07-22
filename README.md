@@ -26,14 +26,14 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-![screen shot of full screen webpage](https://github.com/Eileenpk/GitHub-user-search-app/blob/main/images/website-screenshot.png)
-![screen shot of mobile webpage](https://github.com/Eileenpk/GitHub user-search-app/blob/main/images/mobile-screenshot.png)
+![screen shot of full screen webpage](https://github.com/Eileenpk/GitHub-user-search-app/blob/main/assets/website%20screenshot.png)
+![screen shot of mobile webpage](https://github.com/Eileenpk/GitHub-user-search-app/blob/main/assets/moblie%20screenshot.png)
 
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Eileenpk/GitHub-user search-app)
-- Live Site URL: [live site]( https://eileenpk.github.io/GitHub-user-search-app/)
+- Solution URL: [GitHub](https://github.com/Eileenpk/GitHub-user-search-app)
+- Live Site URL: [live site](https://eileenpk.github.io/GitHub-user-search-app/)
 
 
 ### Built with
